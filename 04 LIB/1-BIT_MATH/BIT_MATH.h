@@ -11,7 +11,7 @@
 #define SET_BIT(Reg, BitNum) (Reg |= (1 << BitNum))
 #define CLEAR_BIT(Reg, BitNum) (Reg &= ~(1 << BitNum))
 #define TOGGLE_BIT(Reg, BitNum) (Reg ^= (1 << BitNum))
-#define GET_BIT_V0(Reg, BitNum) ((Reg >> BitNum) & 1)
+#define GET_BIT(Reg, BitNum) ((Reg >> BitNum) & 1)
 #define GET_BIT_V1(Reg, BitNum) (!!(Reg & (1 << BitNum)))
 
 #endif
